@@ -1,0 +1,13 @@
+org: hall2000
+app: ppx-generator
+service: ppx-generator
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  hello:
+    handler: handler.hello
