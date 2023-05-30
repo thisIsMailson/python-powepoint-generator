@@ -16,7 +16,7 @@ driver.get(url)
 sleep(1)
 
 # Capture a screenshot of the webpage
-screenshot_path = "screenshot.png"
+screenshot_path = "website-screenshot.png"
 driver.save_screenshot(screenshot_path)
 
 # Quit the driver
@@ -32,4 +32,4 @@ slide = presentation.slides.add_slide(slide_layout)
 slide.shapes.add_picture(screenshot_path, left=0, top=0, width=presentation.slide_width, height=presentation.slide_height)
 
 # Save the PowerPoint presentation
-presentation.save("website_presentation2.pptx")
+presentation.save("factsheet_motherson.pptx")
